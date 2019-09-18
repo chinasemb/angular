@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { TopMenu } from './components';
-
+import { TopMenu, ImageSlider } from './components';
 
 @Component({
   selector: 'app-root',
@@ -80,10 +79,47 @@ export class AppComponent {
     }
   ];
 
+  imageSliders: ImageSlider[] = [
+    {
+      imgUrl:
+        // tslint:disable-next-line: max-line-length
+        'https://b1-q.mafengwo.net/s14/M00/A7/C4/wKgE2l13CciAX23hAAr70UDCvzk059.jpg?imageView2%2F2%2Fw%2F700%2Fh%2F600%2Fq%2F90%7CimageMogr2%2Fstrip%2Fquality%2F90',
+      link: '',
+      caption: ''
+    },
+    {
+      imgUrl:
+        // tslint:disable-next-line: max-line-length
+        'https://b1-q.mafengwo.net/s14/M00/A7/C4/wKgE2l13CciAX23hAAr70UDCvzk059.jpg?imageView2%2F2%2Fw%2F700%2Fh%2F600%2Fq%2F90%7CimageMogr2%2Fstrip%2Fquality%2F90',
+      link: '',
+      caption: ''
+    },
+    {
+      imgUrl:
+        // tslint:disable-next-line: max-line-length
+        'https://b1-q.mafengwo.net/s14/M00/A7/C4/wKgE2l13CciAX23hAAr70UDCvzk059.jpg?imageView2%2F2%2Fw%2F700%2Fh%2F600%2Fq%2F90%7CimageMogr2%2Fstrip%2Fquality%2F90',
+      link: '',
+      caption: ''
+    },
+    {
+      imgUrl:
+        // tslint:disable-next-line: max-line-length
+        'https://b1-q.mafengwo.net/s14/M00/A7/C4/wKgE2l13CciAX23hAAr70UDCvzk059.jpg?imageView2%2F2%2Fw%2F700%2Fh%2F600%2Fq%2F90%7CimageMogr2%2Fstrip%2Fquality%2F90',
+      link: '',
+      caption: ''
+    },
+    {
+      imgUrl:
+        // tslint:disable-next-line: max-line-length
+        'https://b1-q.mafengwo.net/s14/M00/A7/C4/wKgE2l13CciAX23hAAr70UDCvzk059.jpg?imageView2%2F2%2Fw%2F700%2Fh%2F600%2Fq%2F90%7CimageMogr2%2Fstrip%2Fquality%2F90',
+      link: '',
+      caption: ''
+    }
+  ];
+
   handleTabSelected(topMenu: TopMenu) {
-    const colors = ['pink', 'blue', 'black'];
+    const colors = ['green', 'blue', 'black'];
     const idx = Math.floor(Math.random() * 3);
-    // 0 1 2  3是闭区间，永远到达不了3
     this.scrollableTabBgColor = colors[idx];
     console.log(topMenu);
   }
