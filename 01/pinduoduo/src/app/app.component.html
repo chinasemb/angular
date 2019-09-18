@@ -2,4 +2,7 @@
   [menus]="topMenus"
   (tabSelected)="handleTabSelected($event)"
   [backgroundColor]="scrollableTabBgColor"
-></app-scrollable-tab>
+  *ngIf="scrollableTabBgColor === 'red'"
+>
+  <div>hello</div>
+</app-scrollable-tab>
